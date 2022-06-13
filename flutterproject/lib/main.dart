@@ -34,9 +34,27 @@ class RandomWords extends StatefulWidget {
 }
 
 class _RandomWordsState extends State<RandomWords> {
+  final _suggestions = <WordPair>[]; // NEW
+  final _biggerFont = const TextStyle(fontSize: 18); // NEW
+  @override
   @override
   Widget build(BuildContext context) {
-    final wordPair = WordPair.random(); // NEW
-    return Text(wordPair.asPascalCase); // NEW
+    return ListView.builder(
+      padding: const EdgeInsets.all(16.0),
+      itemBuilder: (context, i) {
+        if (i.isOdd) return const Divider();
+
+        final index = i ~/ 2;
+        if (index >= _suggestions.length) {
+          _suggestions.addAll(generateWordPairs().take(10));
+        }
+        return ListTile(
+          title: Text(
+            _suggestions[index].asPascalCase,
+            style: _biggerFont,
+          ),
+        );
+      },
+    );
   }
 }
