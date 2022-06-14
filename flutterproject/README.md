@@ -6,8 +6,10 @@ An project to Explore Flutter technology
 
 This project is a starting point for a Flutter application Done By Chang Kiat.
 
-
-
+09/06/2022
+- Install Flutter/ Dart
+- Create a Sample flutter project
+- Commit in Github
 
 12/06/2022
 https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1#6 
