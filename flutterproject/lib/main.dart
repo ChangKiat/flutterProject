@@ -11,8 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // final wordPair = WordPair.random();
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.black, foregroundColor: Colors.white),
+      ),
       home: RandomWords(),
     );
   }
