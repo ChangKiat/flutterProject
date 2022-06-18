@@ -18,4 +18,6 @@ https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1#6
 - Add List View
 
 14/06/2022
-
+- List View add Icon
+- Save clicked icon
+- Navigation and carry saved word
