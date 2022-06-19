@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/main.dart';
 import 'package:flutterproject/randomWords.dart';
+import 'package:flutterproject/src/shared/app.dart';
 
 class sideNav extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class sideNav extends StatelessWidget {
               color: Colors.green,
               image: DecorationImage(
                 fit: BoxFit.fill,
-                image: AssetImage('assets/image/cover.jpg'),
+                image: AssetImage('assets/images/cover.jpg'),
               ),
             ),
             child: Text(
@@ -43,7 +44,18 @@ class sideNav extends StatelessWidget {
                 ),
               )
             },
-          )
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Random Words'),
+            onTap: () => {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const MyMusic(),
+                ),
+              )
+            },
+          ),
         ],
       ),
     );
