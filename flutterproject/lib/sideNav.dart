@@ -24,7 +24,7 @@ class sideNav extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.input),
+            leading: const Icon(Icons.home_outlined),
             title: const Text('Home Page'),
             onTap: () => {
               Navigator.of(context).push(
@@ -35,7 +35,7 @@ class sideNav extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.verified_user),
+            leading: const Icon(Icons.library_books_rounded),
             title: const Text('Random Words'),
             onTap: () => {
               Navigator.of(context).push(
@@ -46,8 +46,8 @@ class sideNav extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Random Words'),
+            leading: const Icon(Icons.library_music),
+            title: const Text('Tutorial 1'),
             onTap: () => {
               Navigator.of(context).push(
                 MaterialPageRoute(

@@ -35,13 +35,18 @@ class _MyMusicState extends State<MyMusic> {
               child: ValueListenableBuilder<ThemeSettings>(
                 valueListenable: settings,
                 builder: (context, value, _) {
+                  final theme = ThemeProvider.of(context); // Add this line
                   // Create theme instance
                   return MaterialApp.router(
                     debugShowCheckedModeBanner: false,
                     title: 'Flutter Demo',
                     // Add theme
-                    // Add dark theme
-                    // Add theme mode
+                    theme: theme
+                        .light(settings.value.sourceColor), // Add this line
+
+                    darkTheme:
+                        theme.dark(settings.value.sourceColor), // Add this line
+                    themeMode: theme.themeMode(), // Add this line
                     routeInformationParser: appRouter.routeInformationParser,
                     routerDelegate: appRouter.routerDelegate,
                   );
