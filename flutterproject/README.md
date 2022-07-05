@@ -32,3 +32,6 @@ https://maffan.medium.com/how-to-create-a-side-menu-in-flutter-a2df7833fdfb
 20/06/2022
 https://codelabs.developers.google.com/codelabs/flutter-boring-to-beautiful#7
 - Pull and merge tutorial one into project
+
+28/06/2022
+- Added dark theme and light theme
