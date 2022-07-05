@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/sideNav.dart';
-import 'package:flutterproject/provider/theme_provider.dart';
+import 'package:flutterproject/tutorial1/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {

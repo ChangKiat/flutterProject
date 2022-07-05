@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproject/about.dart';
 import 'package:flutterproject/main.dart';
 import 'package:flutterproject/randomWords.dart';
-import 'package:flutterproject/src/shared/app.dart';
+import 'package:flutterproject/tutorial1/src/shared/app.dart';
 
 class sideNav extends StatelessWidget {
   @override
@@ -52,6 +53,17 @@ class sideNav extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => const MyMusic(),
+                ),
+              )
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.computer),
+            title: const Text('Device About'),
+            onTap: () => {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const About(),
                 ),
               )
             },

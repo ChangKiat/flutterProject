@@ -51,6 +51,8 @@ class _RandomWordsState extends State<RandomWords> {
         drawer: sideNav(),
         appBar: AppBar(
           title: const Text('Random Words'),
+          iconTheme: Theme.of(context).iconTheme,
+          backgroundColor: Colors.blue,
           actions: [
             IconButton(
               onPressed: _pushSaved,
