@@ -35,3 +35,9 @@ https://codelabs.developers.google.com/codelabs/flutter-boring-to-beautiful#7
 
 28/06/2022
 - Added dark theme and light theme
+
+03/07/2022
+- Complete Tutorial one execrise from boring to beutiful
+
+05/07/2022
+- Get device information 
