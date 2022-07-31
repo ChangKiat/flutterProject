@@ -1,7 +1,7 @@
 import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:flutterproject/sideNav.dart';
+import 'package:flutterproject/SideNavigation/sideNav.dart';
 import 'package:flutterproject/tutorial1/provider/theme_provider.dart';
 
 class About extends StatelessWidget {

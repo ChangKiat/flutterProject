@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutterproject/about.dart';
+import 'package:flutterproject/About/about.dart';
 import 'package:flutterproject/main.dart';
 import 'package:flutterproject/RandomWords/randomWords.dart';
 import 'package:flutterproject/tutorial1/src/shared/app.dart';
+import 'package:flutterproject/YoutubeToturial/adaptive_playlists.dart';
 
 class sideNav extends StatelessWidget {
   @override
@@ -53,6 +54,17 @@ class sideNav extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => const MyMusic(),
+                ),
+              )
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.ondemand_video),
+            title: const Text('Youtube Tutorial'),
+            onTap: () => {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AdaptivePlaylists(),
                 ),
               )
             },

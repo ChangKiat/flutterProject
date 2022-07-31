@@ -1,9 +1,11 @@
 import 'dart:js';
 
 import 'package:flutter/material.dart';
-import 'package:flutterproject/sideNav.dart';
+import 'package:flutterproject/SideNavigation/sideNav.dart';
 import 'package:flutterproject/tutorial1/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
+
+import 'package:flutterproject/YoutubeToturial/app_state.dart';
 
 //Youtube channel short URL
 const flutterDevAccountId = 'UCXZLmOdYB5_O8G_tjkDpTbQ';
@@ -12,9 +14,11 @@ const flutterDevAccountId = 'UCXZLmOdYB5_O8G_tjkDpTbQ';
 const youTubeApiKey = 'AIzaSyCR1SXaMYuDUK7UWzf-P8eYBowcQkD-YdM';
 
 void main() {
-  runApp(ChangeNotifierProvider<FlutterDevPlayLists>(
+  runApp(ChangeNotifierProvider<FlutterDevPlaylists>(
     create: (context) => FlutterDevPlaylists(
-        flutterDevAccountId: flutterDevAccountId, youTubeApiKey: youTubeApiKey),
+      flutterDevAccountId: flutterDevAccountId,
+      youTubeApiKey: youTubeApiKey,
+    ),
     child: const MyApp(),
   ));
 }
