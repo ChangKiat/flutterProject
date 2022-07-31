@@ -28,3 +28,16 @@ https://maffan.medium.com/how-to-create-a-side-menu-in-flutter-a2df7833fdfb
 - Create side Menu
 - Break RandomWords into a new dart
 - Add a new Image
+
+20/06/2022
+https://codelabs.developers.google.com/codelabs/flutter-boring-to-beautiful#7
+- Pull and merge tutorial one into project
+
+28/06/2022
+- Added dark theme and light theme
+
+03/07/2022
+- Complete Tutorial one execrise from boring to beutiful
+
+05/07/2022
+- Get device information 
