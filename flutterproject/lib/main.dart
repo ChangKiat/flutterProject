@@ -1,10 +1,22 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutterproject/sideNav.dart';
 import 'package:flutterproject/tutorial1/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 
+//Youtube channel short URL
+const flutterDevAccountId = 'UCXZLmOdYB5_O8G_tjkDpTbQ';
+
+//Youtube API key
+const youTubeApiKey = 'AIzaSyCR1SXaMYuDUK7UWzf-P8eYBowcQkD-YdM';
+
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider<FlutterDevPlayLists>(
+    create: (context) => FlutterDevPlaylists(
+        flutterDevAccountId: flutterDevAccountId, youTubeApiKey: youTubeApiKey),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
