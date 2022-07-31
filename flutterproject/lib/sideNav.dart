@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/about.dart';
 import 'package:flutterproject/main.dart';
-import 'package:flutterproject/randomWords.dart';
+import 'package:flutterproject/RandomWords/randomWords.dart';
 import 'package:flutterproject/tutorial1/src/shared/app.dart';
 
 class sideNav extends StatelessWidget {
