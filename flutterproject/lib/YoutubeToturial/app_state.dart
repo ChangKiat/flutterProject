@@ -12,7 +12,7 @@ class FlutterDevPlaylists extends ChangeNotifier {
     _api = YouTubeApi(
       _ApiKeyClient(
         client: http.Client(),
-        key: 'AIzaSyCR1SXaMYuDUK7UWzf-P8eYBowcQkD-YdM',
+        key: 'youtubeAPI',
       ),
     );
     _loadPlaylists();

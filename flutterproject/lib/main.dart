@@ -11,7 +11,7 @@ import 'package:flutterproject/YoutubeToturial/app_state.dart';
 const flutterDevAccountId = 'UCXZLmOdYB5_O8G_tjkDpTbQ';
 
 //Youtube API key
-const youTubeApiKey = 'AIzaSyCR1SXaMYuDUK7UWzf-P8eYBowcQkD-YdM';
+const youTubeApiKey = 'youtubeAPI';
 
 void main() {
   runApp(ChangeNotifierProvider<FlutterDevPlaylists>(
