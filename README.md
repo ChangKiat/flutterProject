@@ -1,8 +1,33 @@
-# flutterproject
+# Flutterproject
 
 An project to Explore Flutter technology
 
-## Getting Started
+## Requirement 
+Can Verify the require Software and tool using 
+```
+flutter doctor
+```
+- Flutter SDK
+- VS code
+- Android toolchain (Android App developement)
+- Chrome (Web Development)
+- Visual Studio (Window Development)
+- Android Studio (Development)
+
+## Command command use in flutter
+```
+flutter --version 
+```
+**To check flutter version **
+```
+flutter create sampleproject
+```
+**Create a simple Project**
+```
+flutter run
+```
+**Run flutter project**
+## Getting Started with online tutorial
 
 This project is a starting point for a Flutter application Done By Chang Kiat.
 
