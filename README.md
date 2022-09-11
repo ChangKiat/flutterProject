@@ -27,6 +27,10 @@ flutter create sampleproject
 flutter run
 ```
 **Run flutter project**
+```
+flutter upgrade
+```
+**Upgrade flutter version**
 ## Getting Started with online tutorial
 
 This project is a starting point for a Flutter application Done By Chang Kiat.
